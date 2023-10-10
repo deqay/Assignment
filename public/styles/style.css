@@ -1,0 +1,409 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+/* Student Information */
+/* Deqa Yusuf Student: 301320314 */
+/* Date: October 8th, 2023 */
+
+/* Header */
+header {
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-family: 'Courgette', cursive;
+}
+
+/* Header 1 Styles */
+h1 {
+  font-family: 'Courgette', cursive;
+  font-size: xx-large;
+  text-align: center;
+}
+
+/* Navigation Bar  */
+.navbar {
+  width: 60%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space between;
+}
+
+/* Navigation List Styles */
+.navbar ul li {
+  list-style-type: none;
+  margin: 0 20px;
+  display: inline-block;
+}
+
+/* Navigation Link Styles */
+.navbar li a {
+  color: white;
+  text-transform: uppercase;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: right;
+}
+
+
+/* Logo */
+
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+/* Body */
+
+body {
+  font-family: 'Acme', sans-serif;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Heading 2 Styles */
+
+h2 {
+  font-family: 'Courgette', cursive;
+  text-align: center;
+}
+
+/* Container Styles */
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1pc;
+  padding: 20px;
+  max-width: 700px;
+  text-align: center;
+  font-size: x-large;
+}
+
+/* Left Image Styles */
+
+.left-image {
+  float: left;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  margin-left: 89px;
+}
+
+/* Footer Information Styles */
+
+.footer-info {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+}
+
+/* Social Icons */
+
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.icon-link {
+  font-size: 44px;
+  margin: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.icon-link:hover {
+  color: #0073e6;
+}
+
+/* Contact Page CSS */
+
+.container-contact {
+  width: 600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px solid gray;
+  box-shadow: 2px 2px 5px gray;
+  border-radius: 0;
+  margin-top: 2pc;
+}
+
+/* FORM */
+
+
+.fieldset-contact {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  max-width: 450px;
+  margin: 0 auto;
+  margin-top: 2pc;
+  margin-bottom: 50px;
+}
+
+
+.fieldset-contact legend {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+.fieldset-contact label {
+  display: block;
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+
+
+.fieldset-contact textarea {
+  width: 40%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/*  Submit Button */
+.fieldset-contact input[type="submit"] {
+  background-color: #1f69b9;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.fieldset-contact input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Flip Box */
+.container1, .container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 450px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  margin: 0 10px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box2 {
+  background-color: transparent;
+  width: 300px;
+  height: 450px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  margin: 0 10px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-inner2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box2:hover .flip-box-inner2 {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front2, .flip-box-back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-size: cover;
+  background-position: center;
+  background-image: url('/images/web.jpeg'); 
+}
+
+.flip-box-front2 {
+  background-size: cover;
+  background-position: center;
+  background-image: url('/images/mobile.jpeg'); 
+}
+
+.flip-box-back, .flip-box-back2 {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Multiplication Project */
+
+.multiplication {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.multiplication img {
+  width: 500px;
+  height: auto;
+}
+
+.multiplication p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Bug Smasher */
+.BugSmash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.BugSmash img {
+  width: 500px; 
+  height: auto;
+}
+
+.BugSmash p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Gudetama */
+
+.Gudetama {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.Gudetama img {
+  width: 500px;
+  height: auto;
+}
+
+.Gudetama p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Animated Background */
+
+
+body {
+  background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+  background-size: cover;
+  -webkit-animation: slidein 100s;
+  animation: slidein 100s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+
+@keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+
+/* Centered */
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(75, 75, 250, 0.3);
+  border-radius: 3px;
+}
+
+.center h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Source Code Pro', monospace;
+  text-transform: uppercase;
+}
+
+
